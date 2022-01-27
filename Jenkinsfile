@@ -34,7 +34,7 @@ pipeline {
 
                         sh "echo 'Análisis Estático!'"
 
-                        withSonarQubeEnv('sonarqube3') {
+                        withSonarQubeEnv('sonarqube') {
 
                             sh "echo 'Calling sonar by ID!'"
 
