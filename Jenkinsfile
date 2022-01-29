@@ -6,9 +6,9 @@ pipeline {
 
     environment {
 
-        NEXUS_USER         = credentials('nexus-user')
+        NEXUS_USER         = credentials('NEXUS-USER')
 
-        NEXUS_PASSWORD     = credentials('nexus-password')
+        NEXUS_PASSWORD     = credentials('NEXUS-PASS')
 
     }
 
