@@ -40,9 +40,11 @@ pipeline {
 
                             // Run Maven on a Unix agent to execute Sonar.
 
-                            sh './gradlew sonarqube -Dsonar.projectKey=ejemplo-gradle -Dsonar.java.binaries=build'
+                            //sh './gradlew sonarqube -Dsonar.projectKey=ejemplo-gradle -Dsonar.java.binaries=build'
+                            sh 'mvn clean verify sonar:sonar'
 
                         }
+                }
 
                     }
 
