@@ -44,7 +44,6 @@ pipeline {
                             sh 'mvn clean verify sonar:sonar'
 
                         }
-                }
 
                     }
 
